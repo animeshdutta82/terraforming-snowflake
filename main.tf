@@ -13,6 +13,7 @@ provider "snowflake" {
 
 resource "snowflake_database" "db" {
   name = "TF_DEMO"
+  data_retention_time_in_days = 10
 }
 
 resource "snowflake_warehouse" "warehouse" {
